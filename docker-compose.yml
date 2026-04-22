@@ -1,0 +1,23 @@
+name: docker-project
+
+services:
+  db:
+ 
+
+  app:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: docker-container
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
+

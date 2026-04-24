@@ -28,9 +28,9 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = [
-    'https://your-render-domain.onrender.com',
-]
+# CSRF_TRUSTED_ORIGINS = [
+#     'https://your-render-domain.onrender.com',
+# ]
 
 
 # Application definition
